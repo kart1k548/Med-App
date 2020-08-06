@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Edit Medicine Here</h1>
+        <form action="/meds/edit/{{med.mid}}" method="post">
+        <input type="text" name="name" value="{{med.name}}" placeholder=""/>
+        <input type="text" name="count" value="{{med.count}}" placeholder=""/>
+        <input type="text" name="brand" value="{{med.brand}}" placeholder=""/>
+        <button class="btn btn-success" type="submit">Save</button>
+         <a href="/meds" class="btn btn-danger">Back</a>
+        </form>
+    </body>
+</html>
